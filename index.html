@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="RU">
+<html class="page-html" lang="RU">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,17 +14,17 @@
 
     <title>Студия</title>
   </head>
-  <body>
-    <!-- Шапка сайта 26/05/2021 10:30 -->
+  <body class="studio-body">
+    <!-- Шапка сайта 27/05/2021 07:36 -->
     <header class="page-header">
-      <div class="container header-container">
-        <nav class="header-navigation container">
-          <a class="header-logo-link logo-link" href="./index.html">
+      <div class="header-container flex">
+        <nav class="header-navigation flex">
+          <a class="header-logo-link logo-link flex" href="./index.html">
             <span class="webstudio blue" lang="en">Web</span
             ><span class="webstudio black" lang="en">Studio</span>
           </a>
 
-          <ul class="header-menu-nav nobullets container">
+          <ul class="header-menu-nav nobullets flex">
             <li class="header-menu-nav-item">
               <a class="header-menu-nav-item-links active" href="./index.html">Студия</a>
             </li>
@@ -36,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts-list nobullets container">
+        <ul class="header-contacts-list nobullets flex">
           <li class="header-contacts-list-item">
             <a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -49,53 +49,56 @@
 
     <main class="page-main">
       <!-- Герой -->
-      <div class="container main-container">
+      <div class="main-container flex">
         <section class="hero sections">
           <h1 class="h-1">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+
+          <div class="hero-button-container flex">
+            <button class="hero-button" type="button">Заказать услугу</button>
+          </div>
         </section>
 
         <!-- "Особенности", со скрытым заголовком h2 -->
         <section class="features sections">
           <h2 class="visually-hidden">Особенности</h2>
 
-          <ul class="features-list nobullets container">
+          <ul class="features-list nobullets flex">
             <li class="features-list-item">
-              <h3 class="h-3">Внимание к деталям</h3>
-              <p class="paragraph">
+              <h3 class="features-h-3">Внимание к деталям</h3>
+              <p class="features-paragraph">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="features-list-item">
-              <h3 class="h-3">Пунктуальность</h3>
-              <p class="paragraph">
+              <h3 class="features-h-3">Пунктуальность</h3>
+              <p class="features-paragraph">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="features-list-item">
-              <h3 class="h-3">Планирование</h3>
-              <p class="paragraph">
+              <h3 class="features-h-3">Планирование</h3>
+              <p class="features-paragraph">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="features-list-item">
-              <h3 class="h-3">Современные технологии</h3>
-              <p class="paragraph">
+              <h3 class="features-h-3">Современные технологии</h3>
+              <p class="features-paragraph">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </section>
 
+        <!-- Чем мы занимаемся -->
         <section class="activities sections">
           <h2 class="h-2">Чем мы занимаемся</h2>
 
-          <!-- Сжатые *.jpg "примеры работы" -->
-
-          <ul class="activities-list nobullets container">
+          <!-- Сжатые *.jpg активностей -->
+          <ul class="activities-list nobullets flex">
             <li class="activities-list-item">
               <img
                 class="image"
@@ -126,68 +129,78 @@
           </ul>
         </section>
 
-        <section class="our-team sections">
+        <!-- Наша команда -->
+        <section class="designers sections">
           <h2 class="h-2">Наша команда</h2>
+
           <!-- Cжатые *.jpg участников -->
-          <ul class="designers-list nobullets container">
+          <ul class="designers-list nobullets flex">
             <li class="designers-list-item">
-              <img
-                class="image"
-                src="./images/squooshed/team/team-card-1.jpg"
-                alt="Молодой дизайнер в очках, с приветливой улыбкой, со стриженной бородой и в коричневой рубашке"
-                width="270"
-                height="260"
-              />
-              <h3 class="designers-list-item-name">Игорь Демьяненко</h3>
-              <p lang="en">Product Designer</p>
+              <div class="designers-info-container flex">
+                <img
+                  class="image"
+                  src="./images/squooshed/team/designer-1.jpg"
+                  alt="Молодой дизайнер в очках, с приветливой улыбкой, со стриженной бородой и в коричневой рубашке"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="designers-name">Игорь Демьяненко</h3>
+                <p class="designers-role" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="designers-list-item">
-              <img
-                class="image"
-                src="./images/squooshed/team/team-card-2.jpg"
-                alt="Молодая улыбающаяся разработчица в очках и в черном деловом костюме"
-                width="270"
-                height="260"
-              />
-              <h3 class="designers-list-item-name">Ольга Репина</h3>
-              <p lang="en">Frontend Developer</p>
+              <div class="designers-info-container flex">
+                <img
+                  class="image"
+                  src="./images/squooshed/team/designer-2.jpg"
+                  alt="Молодая улыбающаяся разработчица в очках и в черном деловом костюме"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="designers-name">Ольга Репина</h3>
+                <p class="designers-role" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="designers-list-item">
-              <img
-                class="image"
-                src="./images/squooshed/team/team-card-3.jpg"
-                alt="Молодой маркетолог с уверенной улыбкой, легкой бородой и в светло-синей рубашке"
-                width="270"
-                height="260"
-              />
-              <h3 class="designers-list-item-name">Николай Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <div class="designers-info-container flex">
+                <img
+                  class="image"
+                  src="./images/squooshed/team/designer-3.jpg"
+                  alt="Молодой маркетолог с уверенной улыбкой, легкой бородой и в светло-синей рубашке"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="designers-name">Николай Тарасов</h3>
+                <p class="designers-role" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="designers-list-item">
-              <img
-                class="image"
-                src="./images/squooshed/team/team-card-4.jpg"
-                alt="Молодой дизайнер в очках, со сдержанной уверенной ухмылкой, бородат, в черной футболке"
-                width="270"
-                height="260"
-              />
-              <h3 class="designers-list-item-name">Михаил Ермаков</h3>
-              <p lang="en">UI Designer</p>
+              <div class="designers-info-container flex">
+                <img
+                  class="image"
+                  src="./images/squooshed/team/designer-4.jpg"
+                  alt="Молодой дизайнер в очках, со сдержанной уверенной ухмылкой, бородат, в черной футболке"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="designers-name">Михаил Ермаков</h3>
+                <p class="designers-role" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </section>
       </div>
     </main>
 
-    <!-- Footer Updated on 25/05/2021 18:05 -->
+    <!-- Footer Updated on 27/05/2021 04:29 -->
     <footer class="page-footer">
-      <div class="container footer-container">
+      <div class="footer-container flex">
         <a class="footer-logo-link logo-link" href="./index.html">
           <span class="webstudio blue" lang="en">Web</span
           ><span class="webstudio white" lang="en">Studio</span>
         </a>
 
-        <address class="footer-address">
+        <address class="footer-address flex">
           <ul class="footer-address-list nobullets">
             <li class="footer-address-list-item">
               <a
